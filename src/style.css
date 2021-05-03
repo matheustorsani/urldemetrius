@@ -1,0 +1,50 @@
+body{
+    background-color: #232429;
+}
+.demetrius{
+    font-size: 20px;
+    color: white;
+    padding-right: 15px;
+    padding-left: 170px;
+}
+.gamingsetup{
+    color: white;
+    font-size: 15px;
+    padding-right: 15px;
+    padding-left: 186px;
+}
+.content{
+    color: white;
+    font-size: 15px;
+    padding-right: 15px;
+    padding-left: 195px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.peripherals{
+    color: white;
+    font-size: 15px;
+    padding-right: 15px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.brunaoamigao{
+    color: white;  
+    padding-right: 15px;
+    padding-left: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.social{
+    color: white;
+    font-size: 15px;
+    padding-right: 15px;
+    padding-left: 0px;
+}
+.redes{
+    color: white;
+    font-size: 15px;
+    padding-right: 15px;
+    padding-left: 18px;
+}

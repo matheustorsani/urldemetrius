@@ -1,0 +1,23 @@
+{
+  "name": "urldemetrius",
+  "version": "1.0.0",
+  "description": "Nada pra fazer, por que não fazer um site sobre meu setup?",
+  "main": "index.html",
+  "dependencies": {
+    "terminal.css": "^0.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheustorsani/urldemetrius.git"
+  },
+  "author": "demetrius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheustorsani/urldemetrius/issues"
+  },
+  "homepage": "https://github.com/matheustorsani/urldemetrius#readme"
+}
