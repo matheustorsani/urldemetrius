@@ -10,8 +10,8 @@ window.onload = function() {
         demetrius.style.paddingLeft = '48px';
         gamingsetup.style.paddingLeft = '48px';
         content.style.paddingLeft = '50px';
-        social.style.paddingLeft = '50px';
-        redes.style.paddingLeft = '50px';
+        social.style.paddingLeft = '0';
+        redes.style.paddingLeft = '17px';
         brunao.style.paddingLeft = '40px';
     }
 }
