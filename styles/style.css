@@ -1,0 +1,31 @@
+body{
+    background-color: #232429;
+}
+.terminal-nav, .content{
+	position: relative;
+	width: 1100px;
+	margin: 20px auto 0;
+}
+
+.terminal-prompt:before{
+    color: white;
+}
+.terminal-menu{
+    --secondary-color: white;
+}
+.menu-item{
+    font-size: 19px;
+}
+.terminal-menu li:hover{
+    background: gray;
+    color: white
+}
+p{  
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+}
+h1{
+    font-size: 19px;
+}
