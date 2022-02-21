@@ -1,7 +1,7 @@
 body{
     background-color: #232429;
 }
-.terminal-nav, .content{
+.terminal-nav, main{
 	position: relative;
 	width: 1100px;
 	margin: 20px auto 0;
@@ -20,12 +20,33 @@ body{
     background: gray;
     color: white
 }
-p{  
+
+h1{
+    color: white;   
+    font-size: 19px;
+}
+
+h2{
     color: white;
-    text-align: center;
-    padding: 50px;
     font-size: 18px;
 }
-h1{
-    font-size: 19px;
+
+h3{
+    color: white;
+}
+
+li{
+    color: white;
+    font-size: 18px;
+}
+
+p{
+    color: white;
+    font-size: 18px;
+}
+
+footer p {
+    padding-top: 20%;
+    text-align: center;
+    color: #232429;
 }
