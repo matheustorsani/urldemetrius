@@ -1,0 +1,21 @@
+@use 'variables';
+@use 'responsive';
+
+.nav-list {
+    li {
+        list-style: none;
+        a {
+            color: white;
+            padding-bottom: .20rem;
+            &:hover {
+                border-bottom: 2px solid #8f9887;
+            }
+        }
+    }
+}
+
+@include responsive.responsive {
+    .nav-list {
+        flex-wrap: wrap;
+    }
+}

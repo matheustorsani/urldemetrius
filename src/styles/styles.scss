@@ -1,0 +1,21 @@
+// import IMPORTS
+
+@use 'import/navbar';
+@use 'import/base';
+
+@use 'components/home/main';
+@use 'mobile/home/main' as main2;
+// FORUM PAGE IMPORTS
+
+@use 'components/forum/main' as main3;
+@use 'mobile/forum/main' as main4;
+
+// PROJECT PAGE IMPORTS
+
+@use 'components/projects/main' as main5;
+@use 'components/projects/particles';
+@use 'mobile/projects/main' as main6;
+
+.container {
+    background-image: url('../assets/wpp.jpg');
+}

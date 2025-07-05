@@ -1,0 +1,13 @@
+@use '../../import/responsive';
+
+@include responsive.responsive() {
+    .post {
+        width: 100% !important;
+    }
+
+    .title {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+}

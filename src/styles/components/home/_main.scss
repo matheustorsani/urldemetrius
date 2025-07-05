@@ -1,0 +1,97 @@
+@use '../../import/variables';
+
+.container {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    user-select: none;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        &:hover {
+            cursor: default;
+        }
+
+        &::before {
+            content: '>';
+            margin-right: 0.9rem;
+        }
+
+        &::after {
+            content: "";
+            margin-left: .6rem;
+            animation: cursor 1s infinite;
+        }
+    }
+
+    .nav {
+
+        .list {
+            .nav-list {
+                display: flex;
+                flex-direction: column;
+
+                
+
+                li {
+                    display: flex;
+                    padding-top: 0.6rem;
+                    align-items: baseline;
+
+                    &:first-child {
+                        padding-top: 1rem;
+                    }
+                }
+
+                a, router-link {
+                    opacity: 0.4;
+                    text-transform: capitalize;
+                    font-family: "Roboto Mono", monospace;
+                    font-optical-sizing: auto;
+                    font-style: normal;
+                    font-size: 27px;
+                    margin-left: 0;
+                    padding-left: 0;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: none;
+                        opacity: 1;
+                        border: 0;
+                    }
+                    &::before {
+                        content: '- ';
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+@keyframes cursor {
+    0% {
+        border-right: 2px solid #fff;
+    }
+
+    50% {
+        border-right: 2px solid transparent;
+    }
+
+    100% {
+        border-right: 2px solid #fff;
+    }
+
+}

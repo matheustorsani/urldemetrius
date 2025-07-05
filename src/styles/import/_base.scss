@@ -1,0 +1,42 @@
+@use 'variables';
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    background: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+router-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.montserrat {
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 50px;
+}

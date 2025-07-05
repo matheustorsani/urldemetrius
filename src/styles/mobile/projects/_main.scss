@@ -1,0 +1,20 @@
+@use '../../import/responsive';
+
+
+@include responsive.responsive() {
+    .container-projects {
+        .main-projects {
+            .section-projects {
+                .projects {
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .project {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
