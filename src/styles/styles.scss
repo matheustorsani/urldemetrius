@@ -3,19 +3,23 @@
 @use 'import/navbar';
 @use 'import/base';
 
-@use 'components/home/main';
-@use 'mobile/home/main' as main2;
+@use 'components/home/main' as main;
+@use 'mobile/home/main' as mainMobile;
 // FORUM PAGE IMPORTS
 
-@use 'components/forum/main' as main3;
-@use 'mobile/forum/main' as main4;
+@use 'components/forum/main' as forum;
+@use 'mobile/forum/main' as forumMobile;
 
 // PROJECT PAGE IMPORTS
 
-@use 'components/projects/main' as main5;
-@use 'components/projects/particles';
-@use 'mobile/projects/main' as main6;
+@use 'components/projects/main' as projects;
+@use 'mobile/projects/main' as projectsMobile;
 
 .container {
-    background-image: url('../assets/wpp.jpg');
+    background-image: url('../../public/wpp.jpg');;
+}
+
+main {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #fff;
 }

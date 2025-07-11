@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+.nav-list li {
+  list-style: none;
+}
+.nav-list li a {
+  color: white;
+  padding-bottom: 0.2rem;
+}
+.nav-list li a:hover {
+  border-bottom: 2px solid #8f9887;
+}
+
+@media screen and (max-width: 814px) {
+  .nav-list {
+    flex-wrap: wrap;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: black;
+  margin: 0;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  background: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+router-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.montserrat {
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.container {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.container .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container h1:hover {
+  cursor: default;
+}
+.container h1::before {
+  content: ">";
+  margin-right: 0.9rem;
+}
+.container h1::after {
+  content: "";
+  margin-left: 0.6rem;
+  animation: cursor 1s infinite;
+}
+.container .nav .list .nav-list {
+  display: flex;
+  flex-direction: column;
+}
+.container .nav .list .nav-list li {
+  display: flex;
+  padding-top: 0.6rem;
+  align-items: baseline;
+}
+.container .nav .list .nav-list li:first-child {
+  padding-top: 1rem;
+}
+.container .nav .list .nav-list a,
+.container .nav .list .nav-list router-link {
+  opacity: 0.4;
+  text-transform: capitalize;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 27px;
+  margin-left: 0;
+  padding-left: 0;
+  transition: 0.3s ease-in-out;
+}
+.container .nav .list .nav-list a:hover,
+.container .nav .list .nav-list router-link:hover {
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 1;
+  border: 0;
+}
+.container .nav .list .nav-list a::before,
+.container .nav .list .nav-list router-link::before {
+  content: "- ";
+}
+.container footer > .socials {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container footer > .socials .list {
+  opacity: 0.6;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.3);
+  border: 1.2px solid #626262;
+  border-radius: 50px;
+  display: flex;
+  gap: 2.5rem;
+  transition: 0.2s;
+}
+.container footer > .socials .list:hover {
+  opacity: 1;
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.5);
+}
+.container footer > .socials .list li {
+  list-style: none;
+  font-size: 2rem;
+  color: white;
+}
+.container footer > .socials .list li a {
+  transition: 0.2s;
+}
+.container footer > .socials .list li a:hover {
+  cursor: pointer;
+  color: #898989;
+}
+
+@keyframes cursor {
+  0% {
+    border-right: 2px solid #fff;
+  }
+  50% {
+    border-right: 2px solid transparent;
+  }
+  100% {
+    border-right: 2px solid #fff;
+  }
+}
+._forum {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(145deg, #403c4b, #13052e, #5b310c);
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem;
+  min-height: 100vh;
+}
+._forum .f_container {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #151515;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 500px;
+}
+._forum .f_container a {
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  opacity: 0.4;
+  font-size: 0.8rem;
+}
+._forum .f_container a:hover {
+  opacity: 1;
+  border-bottom: 1px solid #fff;
+}
+._forum .f_container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+._forum .f_container h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ff6f61;
+}
+._forum .f_container label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+._forum .f_container input,
+._forum .f_container textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-top: 0.5rem;
+  background-color: #2a2a2a;
+  resize: none;
+  color: #f1f1f1;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+._forum .f_container input:focus,
+._forum .f_container textarea:focus {
+  outline: 2px solid #ff6f61;
+  background-color: #333;
+}
+._forum .f_container button {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #ff6f61;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+._forum .f_container button:hover {
+  background-color: #ff3d2e;
+}
+._forum .posts {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  margin: 5rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+._forum .posts .post {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  border: 0.2px white solid;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0.75rem 1rem 2rem;
+  width: 40%;
+  height: 40%;
+  margin-bottom: 4rem;
+}
+._forum .posts .post .title {
+  text-align: center;
+  font-size: 27px;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid white;
+}
+._forum .posts .post .content {
+  padding-top: 1rem;
+  color: white;
+}
+._forum .posts .post .image {
+  padding-top: 1rem;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 60%;
+  transition: 0.3s;
+}
+._forum .posts .post .image:hover, ._forum .posts .post .image:active {
+  cursor: zoom-in;
+  width: 100%;
+}
+._forum .posts .post .creator {
+  text-align: end;
+  padding-top: 2rem;
+  color: #a9a9a9;
+  font-size: 13px;
+  opacity: 85%;
+}
+
+@media screen and (max-width: 814px) {
+  .post {
+    width: 100% !important;
+  }
+  .title {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}
+html,
+main {
+  background: radial-gradient(circle at top, #101014 0%, #0B0B0F 100%);
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4rem 0;
+}
+.projects-container h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.projects-container .sub {
+  color: #B0B0B5;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.projects-container nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+.projects-container nav .card {
+  background-color: #1A1A1E;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  transition: 0.2s;
+  text-align: justify;
+}
+.projects-container nav .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(127, 90, 240, 0.3);
+}
+.projects-container nav .card img {
+  border-radius: 0;
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projects-container nav .card .card-content {
+  flex-grow: 1;
+}
+.projects-container nav .card .card-content h3 {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  margin: 1rem 0 0.5rem 0;
+}
+.projects-container nav .card .card-content p {
+  font-size: 0.95rem;
+  color: #B0B0B5;
+  margin-bottom: 1rem;
+}
+.projects-container nav .card a {
+  background: transparent;
+  border: 1px solid #7F5AF0;
+  color: #FFFFFF;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.projects-container nav .card a:hover {
+  background: #7F5AF0;
+  color: #0B0B0F;
+}
+.projects-container h4 {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.container {
+  background-image: url("../../public/wpp.jpg");
+}
+
+main {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #fff;
+}/*# sourceMappingURL=styles.css.map */
