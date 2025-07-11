@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import Project from '../models/Project';
+import shotta from '../../public/Shotta.png'
+import urldemetrius from '../../public/urldemetrius.png';
 
 const projects = [
     new Project(
-        '../../public/urldemetrius.png',
+        urldemetrius,
         'urldemetrius',
         'Meu site pessoal.',
         '/'
@@ -16,7 +18,7 @@ const projects = [
 
     ),
     new Project(
-        '../../public/Shotta.png',
+        shotta,
         'Shotta',
         'Shotta é um projetinho simples, que funciona como um chat em tempo real.',
         'https://github.com/matheustorsani/Shotta'
