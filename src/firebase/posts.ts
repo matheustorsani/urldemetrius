@@ -42,4 +42,4 @@ export async function getPosts() {
             img: data.img || ''
         };
     });
-}
+};

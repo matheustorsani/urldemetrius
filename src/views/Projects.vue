@@ -2,6 +2,7 @@
 import Project from '../models/Project';
 import shotta from '../../public/Shotta.png'
 import urldemetrius from '../../public/urldemetrius.png';
+import selecta from '../../public/selecta.png';
 
 const projects = [
     new Project(
@@ -22,6 +23,12 @@ const projects = [
         'Shotta',
         'Shotta é um projetinho simples, que funciona como um chat em tempo real.',
         'https://github.com/matheustorsani/Shotta'
+    ),
+    new Project(
+        selecta,
+        'Selecta App',
+        'Aplicativo mobile de ecommerce, desenvolvido em React Native com Expo. Possui sistema de delivery, catálogo de produtos via API, autenticação de usuários, entre outras funcionalidades. Projeto desenvolvido como trabalho de conclusão de curso.',
+        'https://github.com/matheustorsani/SelectaApp'
     )
 ];
 </script>

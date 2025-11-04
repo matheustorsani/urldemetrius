@@ -23,6 +23,9 @@
               <a href="https://github.com/matheustorsani" target="_blank"><i class="fa-brands fa-github"></i></a>
             </li>
             <li>
+              <a href="https://www.linkedin.com/in/matheustorsani/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
               <a href="https://instagram.com/mtsxw_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </li>
             <li>
