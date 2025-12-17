@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import Project from '../models/Project';
-import shotta from '../../public/Shotta.png'
-import urldemetrius from '../../public/urldemetrius.png';
-import selecta from '../../public/selecta.png';
+import shotta from '../assets/images/Shotta.png'
+import urldemetrius from "../assets/images/urldemetrius.png";
+import selecta from '../assets/images/selecta.png';
 
 const projects = [
     new Project(
