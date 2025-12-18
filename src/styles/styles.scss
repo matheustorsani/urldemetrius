@@ -2,6 +2,7 @@
 
 @use 'import/navbar';
 @use 'import/base';
+@use 'import/variables';
 
 @use 'components/home/main' as main;
 @use 'mobile/home/main' as mainMobile;
@@ -15,9 +16,13 @@
 @use 'components/projects/main' as projects;
 @use 'mobile/projects/main' as projectsMobile;
 
-.container {
-    background-image: url('../../public/wpp.jpg');;
-}
+// error 404
+
+@use 'components/notfound/main' as notfound;
+
+// teotw page 
+
+@use 'components/teotw/main' as teotw;
 
 main {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;

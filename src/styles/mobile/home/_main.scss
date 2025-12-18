@@ -1,46 +1,7 @@
-// @import '../../import/variables';
-// @import '../../import/responsive';
+@import '../../import/responsive';
 
-
-// @include responsive() {
-//     .container {
-//         position: relative;
-//         .text-content {
-//             width: 100%;
-//             z-index: 2;
-//             padding: 0;
-//             text-align: center;
-
-//             h1 {
-//                 font-size: 30px;
-//                 color: rgb(42, 42, 42);
-//             }
-
-//             .nav {
-//                 padding-right: .5rem;
-//                 .list {
-//                     .nav-list {
-//                         a {
-//                             font-size: 20px;
-//                             color: rgb(0, 0, 0);
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//             .image {
-//                 position: absolute;
-//                 top: 0;
-//                 left: 0;
-//                 width: 100%;
-//                 height: 100%;
-//                 opacity: 0.7;
-//                 flex-grow:1;
-//                 background-image: url('https://i.pinimg.com/originals/45/5b/54/455b54948608a4386819395ea1319e5c.jpg');
-//                 background-color: white;
-//                 background-position: center center;
-//                 background-size: cover;
-//                 background-repeat: no-repeat;
-//             }
-//     }
-// }
+@include responsive() {
+  .welcome-text {
+    writing-mode: vertical-rl;
+  }
+}

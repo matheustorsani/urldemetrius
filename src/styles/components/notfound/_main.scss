@@ -1,0 +1,31 @@
+.not-found {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Arial';
+
+  h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+  }
+
+  a {
+    font-size: 18px;
+    color: #3498db;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

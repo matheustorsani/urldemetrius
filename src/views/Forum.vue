@@ -9,6 +9,7 @@ const content = ref('');
 const img = ref('');
 const creator = ref('');
 const posts = ref<Post[]>([])
+const loading = ref(true);
 
 function loadImg(event: Event) {
     const target = event.target as HTMLInputElement;
@@ -62,6 +63,7 @@ onMounted(async () => {
     posts.value = firebasePosts.map((p: any) =>
         new Post(p.title, p.content, p.creator, p.img)
     );
+    loading.value = false;
 });
 </script>
 
@@ -83,7 +85,10 @@ onMounted(async () => {
             <button @click="add">Enviar!</button>
 
         </div>
-        <div class="posts">
+        <img v-if="loading"
+            src="https://cdn.glitch.com/ec5aae02-78bf-4aaf-8f5b-33c0c431f986%2Fspinner.gif?v=1609125396543"
+            alt="Carregando..." />
+        <div v-else class="posts">
             <Posts v-for="(post, index) in posts" :key="index" :title="post.title" :content="post.content"
                 :img="post.img || ''" :creator="post.creator" />
         </div>
