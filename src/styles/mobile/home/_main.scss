@@ -1,7 +1,8 @@
-@import '../../import/responsive';
+@use '../../import/responsive';
 
-@include responsive() {
+@include responsive.responsive {
   .welcome-text {
     writing-mode: vertical-rl;
+    text-orientation: mixed;
   }
 }
